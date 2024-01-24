@@ -1,0 +1,31 @@
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.navigation__list{
+    display: flex;
+    margin-left: 93px;
+}
+
+.navigation__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.navigation__item--position{
+    position: relative;
+}
+
+.navigation__link{
+    color: $title-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    transition: color $cubic;
+
+    &:hover,
+    &:focus{
+    color: $logo-part-color;
+    }
+}

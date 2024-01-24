@@ -1,0 +1,47 @@
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.project__item{ 
+    flex-basis: calc( 100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px; 
+}
+
+.project__container{
+    position: relative;
+    overflow: hidden;
+}
+
+.project__img{
+    display: block;
+}
+
+.project__overlay{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 91px;
+    top: 0px;
+    background-color:$projects-background-color;
+    color:$primary-background-color;
+    transform: translatey(101%);
+    transition: transform $cubic;
+
+    .project__link:hover &,
+    .project__link:focus &{
+        transform: translatey(0);
+    }
+}
+
+.project__text{
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.54px;
+}

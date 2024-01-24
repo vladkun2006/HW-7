@@ -1,0 +1,16 @@
+.footer-contacts__item:not(:last-child){
+    margin-bottom: 12px;
+    }
+    
+.footer-contacts__link{
+    color:$contacts-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    transition: color $cubic;
+    
+    &:hover,
+    &:focus{
+        color:$primary-background-color;
+    }
+}

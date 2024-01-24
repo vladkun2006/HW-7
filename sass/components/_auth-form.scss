@@ -1,0 +1,88 @@
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.auth-form__title{
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+    color:$title-text-color;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.60px;
+}
+
+.auth-form__label{  
+    margin-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+}
+
+.auth-form__container{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.auth-form__svg{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill $cubic;
+
+    &:hover,
+    &:focus,
+    .auth-form__input:hover + &,
+    .auth-form__input:focus + &{
+        fill:$logo-part-color;
+    }
+}
+
+.auth-form__input{
+    width: 448px;
+    height: 40px;
+    padding: 12px 42px;
+    border-radius: 4px;
+    border: 1px $border-input-color solid;
+    transition: border-color $cubic;
+
+    .auth-form__container:hover &,
+    &:hover,
+    &:focus{
+    border-color: $logo-part-color;
+    outline: none;
+    }
+}
+
+.auth-form__textarea{
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    font-size: 14px;
+    letter-spacing: 0.12px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    border: 1px $border-input-color solid;
+    resize: none;
+    outline: none;
+    transition: border-color $cubic;
+
+    &:hover,
+    &:focus{
+        border-color: $logo-part-color;
+    }
+
+    &::placeholder{
+        color:$placeholder-color;
+        font-size: 14px;
+        letter-spacing: 0.12px;
+        word-wrap: break-word
+    }
+}
+
+.auth-form__btn{
+    margin-left: auto;
+    margin-right: auto;
+}

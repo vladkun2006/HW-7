@@ -1,0 +1,22 @@
+.customer{
+    display: flex;
+    gap: 30px;
+}
+
+.customer__link{
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    fill:$social-primary-color;
+    border: 1px $social-primary-color solid;
+    border-radius: 4px;
+    transition: fill $cubic,
+    border-color $cubic;
+
+    &:hover,
+    &:focus{
+        fill:$logo-part-color;
+        border-color:$logo-part-color;
+    }
+}
