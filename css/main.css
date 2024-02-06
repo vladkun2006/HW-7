@@ -887,16 +887,26 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
-.navigation-social__item:not(:last-child) {
-  padding-right: 10px;
-  border-right: 2px solid rgba(33, 33, 33, 0.2);
+.navigation-social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
 }
 
-.navigation-social__item:not(:first-child) {
-  padding-left: 10px;
+.navigation-social__item:not(:last-child)::after {
+  content: " ";
+  background-color: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 2px;
+  height: 100%;
 }
 
 .navigation-social__link {
