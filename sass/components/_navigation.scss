@@ -1,31 +1,70 @@
-.navigation{
-    display: flex;
-    align-items: center;
-}
+.navigation__menu{
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 13;
+    padding: 48px 40px;
+    background-color: $primary-background-color;
 
-.navigation__list{
-    display: flex;
-    margin-left: 93px;
+    height: 100vh;
+    &.is-open{
+        display: flex;
+    }
 }
 
 .navigation__item:not(:last-child){
-    margin-right: 50px;
-}
+    margin-bottom: 32px;
 
-.navigation__item--position{
-    position: relative;
 }
 
 .navigation__link{
-    color: $title-text-color;
-    font-size: 14px;
+    color: $logo-color;
     font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    transition: color $cubic;
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: 0.02em;
 
     &:hover,
     &:focus{
-    color: $logo-part-color;
+        color: $logo-part-color;
+    }
+}
+
+.navigation__button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 14;
+    width: 40px;
+    height:40px;
+    margin: 0px;
+    padding: 0px;
+    fill: $logo-color;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus{
+        fill: $logo-part-color;
+    }
+}
+
+.navigation__icon-menu{
+    display: block;
+
+    .navigation__button.is-open &{
+        display: none;
+    }
+}
+
+.navigation__icon-cross{
+    display: none;
+
+    .navigation__button.is-open &{
+        display: block;
     }
 }

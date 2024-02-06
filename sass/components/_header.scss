@@ -1,12 +1,4 @@
 .header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.header--border{
-    border-bottom-width: 1600px;
-    border-bottom: 1px solid $secondary-border-color;
+    position: relative;
+    padding: 16px 15px;
 }

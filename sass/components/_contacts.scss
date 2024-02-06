@@ -1,28 +1,28 @@
 .contacts{
     display: flex;
+    flex-direction: column-reverse;
 }
 
-.contacts__item:not(:last-child){
-    margin-right: 40px;
+.contacts__item--color{
+    margin-top: 32px;
 }
 
 .contacts__link{
-    display: flex;
-    align-items: center;
-    color:$primary-text-color;
-    font-size: 14px;
+    color: $logo-part-color;
+    font-size: 34px;
     font-weight: 500;
-    line-height:1.14;
-    letter-spacing: 0.28px;
-    transition: color $cubic;
+    line-height: auto;
+    letter-spacing: 0.02em;
+}
 
-    &:hover,
-    &:focus{
-    color:$logo-part-color;
-    }
+.contacts__link--color{
+    color: $primary-text-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 0.02em;
 }
 
 .contacts__svg{
-    fill: currentColor;
-    margin-right: 10px;
+    display: none;
 }

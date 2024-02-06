@@ -9,49 +9,62 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header header--border">
+  <header class="header">
     <div class="header__container container">
       <nav class="navigation">
         <a class="logo" href="./index.html"> 
           Web
           <span class="logo__part">Studio</span>
         </a> 
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="./index.html">
-              Studio
-            </a>
-          </li>
-          <li class="navigation__item navigation__item--position">
-            <a class="navigation__link active" href="./portfolio.html">
-              Portfolio
-            </a>       
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              Contacts
-            </a>
-          </li>
-        </ul>
+        <button class="navigation__button is-open" data-menu-button>
+          <svg class="navigation__svg"
+          width="40px" 
+          height="40px" 
+          aria-label="switch button for menu"
+          aria-expanded="false"
+          >
+            <use class="navigation__icon-menu" href="./img1/svg/sprite1.svg#icon-menu-open"></use>
+            <use class="navigation__icon-cross" href="./img1/svg/sprite1.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="navigation__menu is-open" data-menu>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--position">
+              <a class="navigation__link navigation__link--active" href="./index.html">
+                Studio
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">
+                Portfolio
+              </a>       
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Contacts
+              </a>
+            </li>
+          </ul> 
+          <ul class="contacts ">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__svg" width="16px" height="12px">
+                  <use href="./img1/svg/sprite1.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--color" href="tel:+12127724150">
+                <svg class="contacts__svg" width="10px" height="16px">
+                  <use href="./img1/svg/sprite1.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__svg" width="16px" height="12px">
-              <use href="./img1/svg/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+12127724150">
-            <svg class="contacts__svg" width="10px" height="16px">
-              <use href="./img1/svg/sprite.svg#smartphone"></use>
-            </svg>
-            +1 212-772-4150
-          </a>
-        </li>
-      </ul>
     </div>
   </header>
     <main class="partfolio">
@@ -245,23 +258,31 @@
             <p class="footer__title">Find us on</p>
             <ul class="social">
               <li class="social__item">
-                <a class="social__link social__link--color" href="#">
-                  <svg class="social__svg" width="20px" height="20px"><use href="./img1/svg/sprite.svg#instagram"></use></svg>
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--color" href="#">
-                  <svg class="social__svg" width="20px" height="20px"><use href="./img1/svg/sprite.svg#facebook"></use></svg>
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--color" href="#">
-                  <svg class="social__svg" width="20px" height="20px"><use href="./img1/svg/sprite.svg#linkedin"></use></svg>
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-linkedin"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--color" href="#">
-                  <svg class="social__svg" width="20px" height="20px"><use href="./img1/svg/sprite.svg#twitter"></use></svg>
+                <a class="social__link social__link--color" aria-label="to social media" href="#">
+                  <svg class="social__svg" width="20px" height="20px">
+                    <use href="./img1/svg/sprite1.svg#icon-twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -275,7 +296,7 @@
             <button class="btn footer__btn" type="submit">
               Subscribe 
               <svg class="btn__svg" width="24px" height="24px">
-                <use href="img1/svg/sprite.svg#icon-send"></use>
+                <use href="img1/svg/sprite1.svg#icon-send"></use>
               </svg>
             </button>
           </form>

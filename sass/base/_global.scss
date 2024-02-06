@@ -4,6 +4,7 @@ body {
     font-family: Roboto,sans-serif;
     font-size: 16px;
     letter-spacing: 0.48px;
+    margin: 0 auto;
 }
 
 ul{
@@ -47,9 +48,12 @@ input{
 }
 
 .container{
-    width: 1200px;
     padding: 94px 15px;
     margin:0 auto;
+    width: 100%;
+    @media screen and (min-width:480px ) {
+        width: 480px;
+    }
 }
 
 .is-hidden {
@@ -64,19 +68,4 @@ input{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.active{
-    color:$logo-part-color;
-}
-
-.active::after{
-    content: "";
-    position: absolute;
-    bottom: -32px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color:$logo-part-color;
-    border-radius: 2px;
 }
