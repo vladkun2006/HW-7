@@ -5,6 +5,14 @@
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:768px){
+        margin-right: 93px;
+    }
+
+    @media screen and (min-width:1200px){
+        font-size: 26px;
+    }
 }
 
 .logo__part{
