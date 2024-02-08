@@ -552,10 +552,14 @@ input {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 448px;
-  min-height: 501px;
+  width: 450px;
   padding: 40px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__button {
@@ -598,18 +602,18 @@ input {
 
 .auth-form__title {
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 26px;
   text-align: center;
   color: #212121;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.03em;
 }
 
 .auth-form__label {
   margin-bottom: 4px;
   font-size: 12px;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.01em;
 }
 
 .auth-form__container {
@@ -631,7 +635,7 @@ input {
 }
 
 .auth-form__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding: 12px 42px;
   border-radius: 4px;
@@ -645,12 +649,11 @@ input {
 }
 
 .auth-form__textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
   border-radius: 4px;
   border: 1px rgba(33, 33, 33, 0.2) solid;
   resize: none;
@@ -664,32 +667,27 @@ input {
 .auth-form__textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
 }
 .auth-form__textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
 }
 .auth-form__textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
 }
 .auth-form__textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
 }
 .auth-form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
-  letter-spacing: 0.12px;
-  word-wrap: break-word;
+  letter-spacing: 0.01em;
 }
 
 .auth-form__btn {
@@ -700,7 +698,6 @@ input {
 .checkbox {
   width: 417px;
   height: 24px;
-  margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,9 +706,8 @@ input {
           align-items: center;
   margin-top: 20px;
   text-align: start;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
+  font-size: 12px;
+  letter-spacing: 0.03em;
 }
 
 .checkbox__input {
@@ -739,7 +735,7 @@ input {
 }
 
 .checkbox__link {
-  margin-left: 5px;
+  margin-left: 4px;
   color: #2196F3;
   text-decoration: underline;
 }

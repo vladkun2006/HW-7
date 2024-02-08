@@ -1,14 +1,12 @@
 .checkbox{
     width: 417px;
     height: 24px;
-    margin-left: 12px;
     display: flex;
     align-items: center;
     margin-top: 20px;
     text-align: start;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
 }
 
 .checkbox__input{
@@ -36,7 +34,7 @@
 }
 
 .checkbox__link{
-    margin-left: 5px;
+    margin-left: 4px;
     color: $logo-part-color;
     text-decoration: underline;
 }
