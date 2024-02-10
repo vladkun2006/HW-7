@@ -6,6 +6,10 @@
     text-align: start;
     font-size: 12px;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:1200px ) {
+        font-size: 14px;
+    }
 }
 
 .checkbox__input{
@@ -30,10 +34,18 @@
     border-color:$logo-part-color;
     background-origin: border-box;
     }
+
+    @media screen and (min-width:1200px ) {
+        left: 52px;
+    }
 }
 
 .checkbox__container{
     margin-left: 24px;
+
+    @media screen and (min-width:1200px ) {
+        margin-left: 36px;
+    }
 }
 
 .checkbox__link{

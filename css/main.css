@@ -562,6 +562,11 @@ input {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
 .modal__button {
   display: -webkit-box;
@@ -653,6 +658,11 @@ input {
     width: 370px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-form__input {
+    width: 448px;
+  }
+}
 
 .auth-form__textarea {
   width: 100%;
@@ -672,32 +682,32 @@ input {
 }
 .auth-form__textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  letter-spacing: 0.01em;
 }
 .auth-form__textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  letter-spacing: 0.01em;
 }
 .auth-form__textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  letter-spacing: 0.01em;
 }
 .auth-form__textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  letter-spacing: 0.01em;
 }
 .auth-form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  letter-spacing: 0.01em;
 }
 @media screen and (min-width: 480px) {
   .auth-form__textarea {
     width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .auth-form__textarea {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-form__textarea {
+    width: 448px;
   }
 }
 
@@ -718,6 +728,11 @@ input {
   text-align: start;
   font-size: 12px;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-size: 14px;
+  }
 }
 
 .checkbox__input {
@@ -743,9 +758,19 @@ input {
   border-color: #2196F3;
   background-origin: border-box;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox__span {
+    left: 52px;
+  }
+}
 
 .checkbox__container {
   margin-left: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__container {
+    margin-left: 36px;
+  }
 }
 
 .checkbox__link {
