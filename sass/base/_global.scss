@@ -48,7 +48,7 @@ input{
 }
 
 .container{
-    padding: 94px 15px;
+    padding: 60px 15px;
     margin:0 auto;
     width: 100%;
     @media screen and (min-width:480px ) {
@@ -61,6 +61,7 @@ input{
 
     @media screen and (min-width:1200px ) {
         width: 1200px;
+        padding: 94px 15px;
     }
 }
 
