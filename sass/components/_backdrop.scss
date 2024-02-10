@@ -14,16 +14,20 @@
 
 .modal{
     position: absolute;
+    width: 90vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    padding: 40px;
+    padding: 20px;
     background-color:$primary-background-color;
 
-    @media screen and (min-width:1200px ) {
-        width: 528px;
-    }
+    @media screen and (min-width:480px ) {
+        padding: 40px;
+        width: 450px;
+    }    
+    // @media screen and (min-width:1200px ) {
+    //     width: 528px;
+    // }
 }
 
 .modal__button{
