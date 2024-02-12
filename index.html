@@ -22,6 +22,7 @@
           height="40px" 
           aria-label="switch button for menu"
           aria-expanded="false"
+          role="button"
           >
             <use class="navigation__icon-menu" href="./img1/svg/sprite1.svg#icon-menu-open"></use>
             <use class="navigation__icon-cross" href="./img1/svg/sprite1.svg#icon-menu-close"></use>
@@ -107,25 +108,25 @@
 
             <p class="auth-form__title">Leave your information and we'll call you back</p>
 
-            <label class="auth-form__label" for="name" name="name">Name</label>
+            <label class="auth-form__label" for="name">Name</label>
             <div class="auth-form__container">
-              <input class="auth-form__input" type="text" id="name" name="name" width="448px" height="40px">
+              <input class="auth-form__input" type="text" id="name" name="name">
               <svg class="auth-form__svg" width="18px" height="18px">
                 <use href="./img1/svg/sprite1.svg#icon-person"></use>
               </svg>
             </div>
 
-            <label class="auth-form__label" for="tel" name="tel">Telephone</label>
+            <label class="auth-form__label" for="tel">Telephone</label>
             <div class="auth-form__container">
-              <input class="auth-form__input" type="tel" id="tel" name="tel" width="448px" height="40px">
+              <input class="auth-form__input" type="tel" id="tel" name="tel">
               <svg class="auth-form__svg" width="18px" height="18px">
                 <use href="./img1/svg/sprite1.svg#icon-phone"></use>
               </svg>
             </div>
 
-            <label class="auth-form__label" for="mail" name="mail">E-mail</label>
+            <label class="auth-form__label" for="mail">E-mail</label>
             <div class="auth-form__container">
-              <input class="auth-form__input" type="email" id="mail" name="mail" width="448px" height="40px">
+              <input class="auth-form__input" type="email" id="mail" name="mail">
               <svg class="auth-form__svg" width="18px" height="18px">
                 <use href="./img1/svg/sprite1.svg#icon-email"></use>
               </svg>
@@ -137,12 +138,7 @@
             <label class="checkbox">
               <input class="checkbox__input" type="checkbox">
               <span class="checkbox__span"></span>
-              <div class="checkbox__container">
-                I agree with the letter and accept the 
-                <a class="checkbox__link" href="./portfolio.html">
-                  Terms and Conditions
-                </a> 
-              </div>
+                I agree with the letter and accept the <a class="checkbox__link" href="./portfolio.html">Terms and Conditions</a> 
             </label>
 
             <button class="auth-form__btn btn" type="submit">
@@ -150,7 +146,7 @@
             </button>
           
           </form>
-          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -194,7 +190,6 @@
             <p class="benefits__text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
           </li>
         </ul>
-      </div>
     </section>
     <section class="about-section container">
       <h2 class="about-section__title title">What we do</h2>
@@ -425,9 +420,8 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__adress">
-        <a class="logo" href="./index.html">
-          Web
-          <span class="logo__part logo__part--color">Studio</span>
+        <a class="logo logo--margin" href="./index.html">
+          Web<span class="logo__part logo__part--color">Studio</span>
         </a>
         <address class="adress">      
           <a class="adress__link" href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+%D0%A1%D0%A8%D0%90/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu">
@@ -448,7 +442,7 @@
         </ul>
       </div>
       <div class="footer__social">
-          <p class="footer__title">Find us on</p>
+          <p class="footer__title footer__title--margin">Find us on</p>
           <ul class="social">
             <li class="social__item">
               <a class="social__link social__link--color" aria-label="to social media" href="#">
