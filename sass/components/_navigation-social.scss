@@ -25,4 +25,10 @@
 
 .navigation-social__link{ 
     color: $logo-part-color;
+    transition: color $cubic;
+    
+    &:hover,
+    &:focus{
+        color: $primary-text-color;
+    }
 }

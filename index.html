@@ -195,19 +195,37 @@
       <h2 class="about-section__title title">What we do</h2>
       <ul class="about">
         <li class="about__item">
-          <img class="about__img" width="370" src="./img1/index/about-photo-1.jpg" alt="man coding site">
+          <img class="about__img" 
+          width="370"
+          srcset="./img1/index/about/about-photo1-1x.jpg 1x ,
+          ./img1/index/about/about-photo1-2x.jpg 2x ,
+          ./img1/index/about/about-photo1-3x.jpg 3x "
+          src="./img1/index/about/about-photo1-3x.jpg" 
+          alt="man coding site">
           <div class="about__desc-container">
             <p class="about__desc">DESKTOP APPS</p>
           </div>
         </li>
         <li class="about__item">
-          <img class="about__img" width="370" src="./img1/index/about-photo-2.jpg" alt="man tasting site">
+          <img class="about__img" 
+          width="370" 
+          srcset="./img1/index/about/about-photo2-1x.jpg 1x ,
+          ./img1/index/about/about-photo2-2x.jpg 2x ,
+          ./img1/index/about/about-photo2-3x.jpg 3x "
+          src="./img1/index/about/about-photo2-3x.jpg"
+          alt="man tasting site">
           <div class="about__desc-container">
             <p class="about__desc">Mobile APPS</p>
           </div>
         </li>
         <li class="about__item">
-          <img class="about__img" width="370" src="./img1/index/about-photo-3.jpg" alt="man designing site">
+          <img class="about__img" 
+          width="370"
+          srcset="./img1/index/about/about-photo3-1x.jpg 1x ,
+          ./img1/index/about/about-photo3-2x.jpg 2x ,
+          ./img1/index/about/about-photo3-3x.jpg 3x "
+          src="./img1/index/about/about-photo3-3x.jpg" 
+          alt="man designing site">
           <div class="about__desc-container">
             <p class="about__desc">DESIGN SOLUTIONS</p>
           </div>
@@ -219,7 +237,36 @@
         <h2 class="workers-section__title title">Our Team</h2>
         <ul class="worker">
           <li class="worker__item">
-            <img class="worker__img" src="./img1/index/worker-photo-1.jpg" alt="man whith glasses">
+            <picture>
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo1-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo1-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo1-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 480px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo1-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo1-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo1-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 768px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo1-pc-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo1-pc-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo1-pc-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 769px)"
+              >
+              
+              <img class="worker__img" src="./img1/index/workers/worker-photo1-pc-3x.jpg" alt="man whith glasses">
+            </picture>
             <div class="worker__container">
               <p class="worker__name">Christopher Walker</p>
               <p class="worker__spetiality">Product Designer</p>
@@ -256,7 +303,36 @@
             </div>
           </li>
           <li class="worker__item">
-            <img class="worker__img" src="./img1/index/worker-photo-2.jpg" alt="man whith short haircut">
+            <picture>
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo2-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo2-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo2-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 480px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo2-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo2-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo2-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 768px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo2-pc-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo2-pc-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo2-pc-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 769px)"
+              >
+
+              <img class="worker__img" src="./img1/index/workers/worker-photo2-pc-3x.jpg" alt="girl whith glasses">
+            </picture>
             <div class="worker__container">
               <p class="worker__name">Kylie Evans</p>
               <p class="worker__spetiality">Frontend Developer</p>
@@ -293,7 +369,36 @@
             </div>
           </li>
           <li class="worker__item">
-            <img class="worker__img" src="./img1/index/worker-photo-3.jpg" alt="man whith glasses">
+            <picture>
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo3-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo3-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo3-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 480px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo3-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo3-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo3-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 768px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo3-pc-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo3-pc-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo3-pc-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 769px)"
+              >
+
+              <img class="worker__img" src="./img1/index/workers/worker-photo3-pc-3x.jpg" alt="man whith short haircut">
+            </picture>
             <div class="worker__container">
               <p class="worker__name">Ryan Harris</p>
               <p class="worker__spetiality">Marketing</p>
@@ -330,7 +435,36 @@
             </div>
           </li>
           <li class="worker__item">
-            <img class="worker__img" src="./img1/index/worker-photo-4.jpg" alt="girl whith glasses">
+            <picture>
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo4-mobile-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo4-mobile-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo4-mobile-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 480px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo4-tablet-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo4-tablet-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo4-tablet-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(max-width: 768px)"
+              >
+
+              <source 
+              srcset=" 
+              ./img1/index/workers/worker-photo4-pc-1x.jpg 1x , 
+              ./img1/index/workers/worker-photo4-pc-2x.jpg 2x , 
+              ./img1/index/workers/worker-photo4-pc-3x.jpg 3x" 
+              type="image/jpeg" 
+              media="(min-width: 769px)"
+              >
+
+              <img class="worker__img" src="./img1/index/workers/worker-photo4-pc-3x.jpg" alt="man whith glasses">
+            </picture>
             <div class="worker__container">
               <p class="worker__name">Tyler Moore</p>
               <p class="worker__spetiality">UI Designer</p>

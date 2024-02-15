@@ -70,6 +70,7 @@
 
 .navigation__link{
     color: $logo-color;
+    transition: color $cubic;
 
     &:hover,
     &:focus{
@@ -111,6 +112,7 @@
     fill: $logo-color;
     background-color: transparent;
     border: none;
+    transition: fill $cubic;
 
     @media screen and (min-width:768px ) {
         display: none;

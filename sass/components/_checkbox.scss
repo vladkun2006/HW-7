@@ -25,9 +25,12 @@
     height: 15px;
     border: 2px $logo-color solid;
     border-radius: 2px;
+    transition: border-color $cubic, ;
 
-    .checkbox:hover &{
+    .checkbox__input:focus + &,
+    .checkbox__input:hover + &{
         border-color: $logo-part-color;
+        outline: none;
     }
     
     .checkbox__input:checked + &{
@@ -36,6 +39,10 @@
     background-color:$logo-part-color;
     border-color:$logo-part-color;
     background-origin: border-box;
+    }
+
+    @media screen and (min-width:480px ) {
+        left: 40px;
     }
 
     @media screen and (min-width:1200px ) {
@@ -54,4 +61,9 @@
 .checkbox__link{
     color: $logo-part-color;
     text-decoration: underline;
+
+    &:hover,
+    &:focus{
+        color: $btn-hover-color;
+    }
 }

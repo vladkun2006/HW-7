@@ -49,6 +49,12 @@
 
 .contacts__link{
     color: $logo-part-color;
+    transition: fill $cubic, color $cubic;
+
+    &:hover,
+    &:focus{
+        color: $primary-text-color;
+    }
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -56,12 +62,24 @@
         justify-content: start;
         color: $primary-text-color;
         fill: $primary-text-color;
+
+        &:hover,
+        &:focus{
+            color: $logo-part-color;
+            fill: $logo-part-color;
+        }
     }
 }
 
 
 .contacts__link--color{
     color: $primary-text-color;
+    
+    &:hover,
+    &:focus{
+        color: $logo-part-color;
+        fill: $logo-part-color;
+    }
 }
 
 .contacts__svg{
